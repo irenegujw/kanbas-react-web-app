@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Assignments</title>
+  
+  <style>
+    .mt-20 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+
+</head>
+
+<body style="font-family:'Times New Roman', Times, serif;">
+  <div class="columns-container" style=" width: 100%; display: flex;">
+  
+    <div id="Kanbas Navigation">
+      <ul>
+        <li><a href="../../Account/Profile/index.html">Account</a></li>
+        <li><a href="../../Dashboard/index.html">Dashboard</a></li>
+        <li><a href="../../Courses/home.html">Courses</a></li>
+        <li><a href="../../Calendar/index.html">Calendar</a></li>
+        <li><a href="../../Inbox/index.html">Inbox</a></li>
+        <li><a href="../../History/index.html">History</a></li>
+        <li><a href="../../Studio/index.html">Studio</a></li>
+        <li><a href="#">Commons</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </div>
+
+    <div id="Course Navigation">
+      <ul>
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="../home.html">Module</a></li>
+        <li><a href="#">Piazza</a></li>
+        <li><a href="#">Zoom Meetings</a></li>
+        <li><a href="../Assignments/index.html">Assignments</a></li>
+        <li><a href="#">Quizzes</a></li>
+        <li><a href="../grades.html">Grades</a></li>
+        <li><a href="#">People</a></li>
+        <li><a href="#">Panopto Video</a></li>
+        <li><a href="#">Discussions</a></li>
+        <li><a href="#">Announcements</a></li>
+        <li><a href="#">Pages</a></li>
+        <li><a href="#">Files</a></li>
+        <li><a href="#">Rubrics</a></li>
+        <li><a href="#">Outcomes</a></li>
+        <li><a href="#">Collaborations</a></li>
+        <li><a href="#">Syllabus</a></li>
+        <li><a href="../settings/coursedetail.html">Settings</a></li>
+      </ul>
+    </div>
+
+    <div id="Main Part">
+      <div style="padding: 8px; border-bottom: grey solid 1px;">
+        <select>
+          <!-- <option value="Edit">Edit</option> -->
+          <option selected value="Speed Grader">Speed Grader</option>
+        </select> 
+      </div>  
+
+      <h3>Assignment Name</h3>
+      <input type="text" placeholder="A1 - ENV + HTML" class="mt-20"><br>
+      <input type="text" placeholder="This is the assignment description." class="mt-20" ><br>
+      <div class="mt-20">
+        Points<br>
+        <input type="number", placeholder="10">
+      </div>
+      <div class="mt-20">
+        Assignment Group<br> 
+        <select>
+          <!-- <option value="QUIZZES">QUIZZES</option>
+          <option value="EXAMS">EXAMS</option>
+          <option value="PROJECT">PROJECT</option> -->
+          <option selected value="ASSIGNMENTS">ASSIGNMENTS</option>
+        </select> 
+      </div>
+      <div class="mt-20">
+        Display Grade as<br>
+        <select>
+          <!-- <option value="Points">Points</option> -->
+          <option selected value="Percentage">Percentage</option>
+        </select> 
+      </div>
+      <div class="mt-20">
+        Submission Type<br>
+        <select>
+          <!-- <option value="In Person">In Person</option> -->
+          <option selected value="Online">Online</option>
+        </select> 
+      </div>
+      <div>
+        Online Entry Options<br>
+        <input type="checkbox" value="Text Entry"
+          id="chkbox-textEntry" >
+        <label for="chkbox-textEntry">Text Entry</label><br/>
+
+        <input type="checkbox" value="Website URL"
+          id="chkbox-webURL" >
+        <label for="chkbox-webURL">Website URL</label><br/>
+
+        <input type="checkbox" value="Media Recordings"
+          id="chkbox-mediaRecord" >
+        <label for="chkbox-mediaRecord">Media Recordings</label><br/>
+
+        <input type="checkbox" value="Student Annotation"
+          id="chkbox-studentAnnotation" >
+        <label for="chkbox-studentAnnotation">Student Annotation</label><br/>
+
+        <input type="checkbox" value="File uploads"
+          id="chkbox-file" >
+        <label for="chkbox-file">File uploads</label><br/>
+        <!-- <ul>
+          <li><input type="checkbox" value="Restrict Type"
+          id="chkbox-fileType" >
+          <label for="chkbox-fileType">Restrict Upload File Types</label></li>
+        </ul> -->
+      </div>
+      <div class="mt-20">
+        Submission Attempts<br>
+        <select>
+          <!-- <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="5">5</option> -->
+          <option selected value="Unlimited">Unlimited</option>
+        </select> 
+      </div>
+      <div class="mt-20">
+        Plagiarism Review<br>
+        <select>
+          <option selected value="None">None</option>
+        </select> 
+      </div>
+      <div class="mt-20">
+        Group Assignment<br>
+        <input type="checkbox" value="isGroupAssignment"
+          id="chkbox-groupAssign" >
+        <label for="chkbox-groupAssign">This is a group assignment</label><br/>
+      </div>
+      <div class="mt-20">
+        Peer Reviews<br>
+        <input type="checkbox" value="requirePeerRev"
+          id="chkbox-peerRev" >
+        <label for="chkbox-peerRev">Require Peer Reviews</label><br/>
+      </div>
+
+      <div>
+        Assign
+        <div>
+          Assign to<br>
+          <input type="text" placeholder="Everyone"><br>
+        </div>
+        <div class="mt-20">
+          Due<br>
+          <input type="date"
+                    id="due-date">
+        </div>
+        <div class="mt-20">
+          Available From<br>
+          <input type="date" 
+                    id="available-start-date">
+        </div>
+        <div class="mt-20">
+          Until<br>
+          <input type="date" 
+                    id="available-end-date">
+        </div>
+        <a href="index.html">
+          <button>Cancel</button>
+        </a><br>
+
+        <a href="index.html">
+          <button>Save</button>
+        </a>
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
