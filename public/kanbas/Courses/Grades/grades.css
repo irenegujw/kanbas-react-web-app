@@ -1,0 +1,7 @@
+.table-row > * {
+  border: 1px solid lightgray;
+}
+
+.table-row > th {
+  text-align: center;
+}

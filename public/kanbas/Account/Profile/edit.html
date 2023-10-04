@@ -3,113 +3,170 @@
 <head>
   <meta charset="UTF-8">
   <title>Grades</title>
-
-  <style>
-    .linkMapContainer {
-      display: flex; 
-      align-items: end; 
-      justify-content: space-around;
-      margin-bottom: 2px;
-    }
-
-    .linkMapItem {
-      display: flex; 
-      flex-direction: column; 
-      justify-content: center; 
-      align-items: center;
-    }
-  </style>
-
+  <link rel="stylesheet" href="../../../style.css" />
+  <link rel="stylesheet" href="../../KanbasNavigation/index.css" />
+  <link rel="stylesheet" href="../AccountNavigation/index.css" />
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css" rel="stylesheet"/>
+  <link href="../../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  
 </head>
 
-<body style="font-family:'Times New Roman', Times, serif;">
-  <div class="columns-container" style=" width: 100%; display: flex; justify-content: space-around;">
-      
-  <div id="Kanbas Navigation">
-    <ul>
-      <li><a href="../../../kanbas/Account/Profile/index.html">Account</a></li>
-      <li><a href="../../../kanbas/Dashboard/index.html">Dashboard</a></li>
-      <li><a href="../../../kanbas/Courses/home.html">Courses</a></li>
-      <li><a href="../../../kanbas/Calendar/index.html">Calendar</a></li>
-      <li><a href="../../../kanbas/Inbox/index.html">Inbox</a></li>
-      <li><a href="../../../kanbas/History/index.html">History</a></li>
-      <li><a href="../../../kanbas/Studio/index.html">Studio</a></li>
-      <li><a href="#">Commons</a></li>
-      <li><a href="#">Help</a></li>
-    </ul>
-  </div>
-  
-  <div id="Profile Navigation">
-    <ul>
-      <li><a href="#">Notifications</a></li>
-      <li><a href="index.html">Profile</a></li>
-      <li><a href="#">Files</a></li>
-      <li><a href="#">Settings</a></li>
-      <li><a href="#">ePortfolios</a></li>
-      <li><a href="#">Shared Content</a></li>
-      <li><a href="#">The Hub</a></li>
-      <li><a href="#">Qwickly Course Tools</a></li>
-      <li><a href="#">Global Announcements</a></li>
-    </ul>
-  </div> 
-  <div>
-    <form action="index.html">
-      <h2>Jose Annunziato</h2>
-      name:*
-      <input name="fullName" type="text" placeholder="Jose Annunziato" >
-      Pronouns 
-      <select>
-        <option selected value="None">None</option>
-      </select><br>
-      Title:
-      <input type="text" >
-      
-      <h4>Contact</h4>
-      <p>No registered services, you can add some on the <a href="#">setting</a> page.</p>
-      <h4>Contact</h4>
-      <p>No registered services, you can add some on the <a href="#">setting</a> page.</p>
-      
-      <h4>Biography</h4>
-      <p>Faculty, Software Engineer, AI, Space, and renewables enthusiast.</p>
-      <textarea name="biography" style='width:500px;height: 40px;'>Faculty, Software Engineer, AI, Space, and renewables enthusiast.
-      </textarea>
-
-
-      <h4>Links</h4>
-      <ul>
-        <li> <a href="#">YouTube</a> Links to an external site</li>
+<body>
+  <div class="wd-flex-row-container" >
+    
+    <div class="wd-bg-color-black d-none d-md-block">
+      <img src="../../../images/neu.png" class="wd-neu-icon">
+      <ul class="wd-kanbas-navigation">
+        <li class="wd-active">
+          <a href="../../Account/Profile/index.html">
+            <i class="fa-regular fa-circle-user" style="color: grey;"></i>
+            Account</a></li>
+        <li>
+          <a href="../../Dashboard/index.html">
+            <i class="fa fa-gauge"></i>
+            Dashboard</a></li>
+        <li>
+          <a href="../../Courses/Home/home.html">
+            <i class="fa fa-book" ></i>
+            Courses</a></li>
+        <li>
+          <a href="../../Calendar/index.html">
+            <i class="fa fa-calendar-days"></i>
+            Calendar</a></li>
+        <li>
+          <a href="../../Inbox/index.html">
+            <i class="fa fa-envelope-open-text"></i>
+            Inbox</a></li>
+        <li>
+          <a href="../../History/index.html">
+            <i class="fa fa-clock-rotate-left"></i>
+            History</a></li>
+        <li>
+          <a href="../../Studio/index.html">
+            <i class="fa fa-network-wired"></i>
+            Studio</a></li>
+        <li>
+          <a href="#">
+            <i class="fa fa-cloud-arrow-up"></i>
+            Commons</a></li>
+        <li>
+          <a href="#">
+            <i class="fa-regular fa-circle-question"></i>
+            Help</a></li>
       </ul>
+    </div>
+  
+    <div class="wd-main-content" style="width: 100%;">
+      <div class="wd-top-title">
+        <i class="fa fa-bars" style="margin-right:10px; color: red; font-size: 1.5rem;"></i>
+        Jose Annunziato's Profile
+        <hr>
+      </div> 
+
+      <div class="wd-flex-row-container"> 
+
+        <div class="d-none d-md-block">
+          <ul class="wd-account-navigation">
+            <li><a href="#">Notifications</a></li>
+            <li class="wd-active"><a href="../Profile/index.html">Profile</a></li>
+            <li><a href="#">Files</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">ePortfolio</a></li>
+            <li><a href="#">Shared Content</a></li>
+            <li><a href="#">The Hub</a></li>
+            <li><a href="#">Qwickly Course Tools</a></li>
+            <li><a href="#">Global Announcements</a></li>
+          </ul>
+        </div>
       
-      <div class="linkMapContainer">
-        <div class="linkMapItem">
-          Title
-          <input  type="text" value="YouTube" placeholder="YouTube"/>
+    <div class="wd-main-content" >
+      <div class="wd-flex-row-container mb-4 ms-4"> 
+        <div>
+      
+          <form action="index.html">
+            <div class="wd-profile-photo" style="margin-bottom: 20px;">
+              <i class="fa fa-user"></i>
+            </div>
+            <div class="mb-1" style="width: 200px;">
+              <label class="form-label" for="fullName"> Name:*</label><br>
+              <input class="form-control" id="fullName" name="fullName" type="text" value="Jose Annunziato">
+            </div>
+            <div class="mb-1" style="width: 200px;">
+              <label class="form-label" for="pronouns"> Pronouns:</label><br>
+              <select class="form-select" id="pronouns" name="pronouns">
+                <option selected value="None">None</option>
+                <option value="He/Him">He/Him</option>
+                <option value="She/Her">She/Her</option>
+              </select>
+            </div>
+            <div class="mb-4" style="width: 200px;">
+              <label class="form-label" for="title"> Title:</label>
+              <input class="form-control" id="title" name="title" type="text" >
+            </div>
+            <div class="mb-4" >
+              <h3>Contact</h3>
+              <p>No registered services, you can add some on the 
+                <a a href="#" style="color: red;">setting</a>
+                  page.
+              </p>
+            </div>
+            
+            <div class="mb-4" >
+              <h3>Biography</h3>
+              <textarea class="form-control" name="bio" id="bio">Faculty, Software Engineer, AI, Space, and renewables enthusiast.
+              </textarea>
+            </div>
+       
+            <div class="mb-2">
+              <h3>Links</h3>
+              <div class="container text-center">
+                <div class="row">
+                  <div class="col-5">Title</div>
+                  <div class="col"></div>
+                  <div class="col-5">URL</div>
+                </div>
+                <div class="row mb-1">
+                  <div class="col-5">
+                    <input class="form-control wd-profile-link-input" id="linkTitle1" name="linkTitle1" type="text">
+                  </div>
+                  <div class="col">&#8594</div>
+                  <div class="col-5">
+                    <input class="form-control wd-profile-link-input" id="linkURL1" name="linkURL1" type="text">
+                  </div>
+                </div>
+                <div class="row mb-1">
+                  <div class="col-5">
+                    <input class="form-control wd-profile-link-input" id="linkTitle2" name="linkTitle2" type="text">
+                  </div>
+                  <div class="col">&#8594</div>
+                  <div class="col-5">
+                    <input class="form-control wd-profile-link-input" id="linkURL2" name="linkURL2" type="text">
+                  </div>
+                </div>
+              </div>
+              <a href="#">
+                <button type="button" class="btn btn-outline-dark btn-sm">Add another link</button>
+              </a>
+            </div>
+            <hr>
+            <a href="index.html">
+              <button type="button" class="btn btn-danger float-end ms-1">Save profile</button>
+            </a>
+            <a href="index.html">
+              <button type="button" class="btn btn-outline-dark float-end">Cancel</button>
+            </a>
+          </form>
         </div>
-        <div style="margin-bottom: 2px;">&#8594;</div>
-        <div class="linkMapItem">
-          URL
-          <input type="text" value="https://youtube.com" placeholder="https://youtube.com"/>
-        </div>
-        <a href="#" style="margin-bottom: 2px;">Remove</a>
+       
       </div>
-
-
-
-      <a href="#">
-        <button>Add another link</button>
-      </a><br>
-      <a href="#">
-        <button>Cancel</button>
+    </div>
+    <div>
+      <a href="index.html">
+        <button type="button" class="btn btn-outline-dark float-end" style="width:max-content;" >
+          <i class="fa fa-pencil"></i>
+          Cancel Editing
+        </button>
       </a>
-      <a href="#">
-        <button>Save profile</button>
-      </a><br>
-      <a href="#">
-        <button>Edit Profile</button>
-      </a>
-      <a href="#">
-        <button>Cancel Editing</button>
-      </a>
-
-    </form>
+    </div>
   </div>
+</body>

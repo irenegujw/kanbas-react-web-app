@@ -1,0 +1,12 @@
+.wd-dashboard-grid .col{
+  width: 250px;
+}
+
+.courses-container {
+  max-width: 1200px;
+}
+
+.courses-container  >  * {
+  width: 270px;
+  margin: 0 20px 30px 0;
+}

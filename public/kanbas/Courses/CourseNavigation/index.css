@@ -1,0 +1,44 @@
+.wd-course-navigation {
+  background-color: white;
+  list-style: none;
+  width: 190px;
+  margin: 0px;
+  padding-left: 25px;
+  padding-right: 5px;
+  height:100vh;
+}
+
+.wd-course-navigation li {
+  padding-left: 8px;
+  /* padding-top: 7px; */
+  margin-top: 17px;
+}
+
+.wd-course-navigation li.wd-active {
+  border-left: 2px solid black;
+}
+
+.wd-course-navigation li.wd-active a {
+  color: black;
+}
+
+.wd-course-navigation a {
+  color: red;
+  text-decoration: none;
+}
+
+.wd-assignment-list .wd-assignment-item {
+  border-left: 4px solid green;
+}
+
+.wd-assignment-list .wd-assignment-item i {
+  align-self: center;
+}
+
+.wd-assignment-type i {
+  align-self: center;
+}
+
+.wd-assignment-type ispan {
+  align-self: center;
+}

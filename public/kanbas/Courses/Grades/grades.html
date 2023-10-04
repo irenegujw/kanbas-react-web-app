@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grades</title>
+  <link rel="stylesheet" href="../../../style.css" />
+  <link rel="stylesheet" href="../../../kanbas/KanbasNavigation/index.css" />
+  <link rel="stylesheet" href="../../../kanbas/Courses/CourseNavigation/index.css" />
+  <link rel="stylesheet" href="./grades.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css" rel="stylesheet"/>
+  <link href="../../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <style>
+    .text-input {
+      max-width: 70px;
+      text-align: center;
+    }
+
+    .grade {
+      text-align: center;
+    }
+
+
+    th {
+      padding: 10px;
+    }
+
+  </style>
+</head>
+<body style="font-family:'Times New Roman', Times, serif;">
+
+  <div class="wd-flex-row-container" >
+
+    <div class="wd-bg-color-black">
+      <img src="../../../images/neu.png" class="wd-neu-icon">
+      <ul class="wd-kanbas-navigation">
+        <li>
+          <a href="../../kanbas/Account/Profile/index.html">
+            <i class="fa-regular fa-circle-user" style="color: white;"></i>
+            Account</a></li>
+        <li class="wd-active">
+          <a href="../../kanbas/Dashboard/index.html">
+            <i class="fa fa-gauge"></i>
+            Dashboard</a></li>
+        <li>
+          <a href="../../kanbas/Courses/Home/home.html">
+            <i class="fa fa-book"></i>
+            Courses</a></li>
+        <li>
+          <a href="../../kanbas/Calendar/index.html">
+            <i class="fa fa-calendar-days"></i>
+            Calendar</a></li>
+        <li>
+          <a href="../../kanbas/Inbox/index.html">
+            <i class="fa fa-envelope-open-text"></i>
+            Inbox</a></li>
+        <li>
+          <a href="../../kanbas/History/index.html">
+            <i class="fa fa-clock-rotate-left"></i>
+            History</a></li>
+        <li>
+          <a href="../../kanbas/Studio/index.html">
+            <i class="fa fa-network-wired"></i>
+            Studio</a></li>
+        <li>
+          <a href="#">
+            <i class="fa fa-cloud-arrow-up"></i>
+            Commons</a></li>
+        <li>
+          <a href="#">
+            <i class="fa-regular fa-circle-question"></i><br>
+            Help</a></li>
+      </ul>
+    </div>
+
+
+
+
+
+    <div id="Main Part" style="width: 90%;">
+      <div
+        class="wd-flex-row-container"
+        style="width: 100%; border-bottom: gray 1px solid; margin: 30px;"
+      >
+        <div class="me-1">
+          <i class="fa fa-bars" style="margin-right:10px; color: red; font-size: 1.5rem;"></i>
+        </div>
+        <div>
+          <nav style="--bs-breadcrumb-divider: '>';font-size: 1.2rem;" aria-label="breadcrumb">
+            <ol class="breadcrumb" >
+              <li class="breadcrumb-item" style="float: none;color: red;">
+                <a style="color: red;" href="../Home/home.html">CS5800 Web Development FL23 Sec11</a>
+              </li>
+              <li class="breadcrumb-item" style="float: none;color: red;">Assignments</li>
+            </ol>
+          </nav>
+
+        </div>
+
+      </div>
+
+      <div class="d-flex">
+
+        <div id="Course Navigation">
+
+          <ul class="wd-course-navigation">
+            <li><a href="../Home/home.html">Home</a></li>
+            <li><a href="../Home/home.html">Module</a></li>
+            <li><a href="#">Piazza</a></li>
+            <li><a href="#">Zoom Meetings</a></li>
+            <li><a href="../Assignments/index.html">Assignments</a></li>
+            <li><a href="#">Quizzes</a></li>
+            <li class="wd-active"><a href="../Grades/grades.html">Grades</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">Panopto Video</a></li>
+            <li><a href="#">Discussions</a></li>
+            <li><a href="#">Announcements</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Files</a></li>
+            <li><a href="#">Rubrics</a></li>
+            <li><a href="#">Outcomes</a></li>
+            <li><a href="#">Collaborations</a></li>
+            <li><a href="#">Syllabus</a></li>
+            <li><a href="../Settings/coursedetail.html">Settings</a></li>
+        </div>
+
+        <div style="width: 90%">
+          <div class="d-flex justify-content-end" style="width: 90%; margin-bottom: 10px">
+            <button
+              class="btn btn-outline-secondary"
+              style="width: 100px; margin-right: 10px;"
+            >
+            <i class="fa-solid fa-file-import" style="margin-right: 3px;"></i>Import
+            </button>
+            <div class="dropdown">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa-solid fa-file-export" style="margin-right: 3px;"></i>Export
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+
+            <button class="btn btn-outline-secondary" style="margin-left: 10px;">
+              <i class="fa-solid fa-gear"></i>
+            </button>
+          </div>
+
+          <div class="d-flex justify-content-between" style="width: 90%">
+            <label class="d-flex flex-column" style="width: 45%;">
+              <strong>Student Names</strong>
+              <input
+                type="text"
+                id="student-name-search"
+                placeholder="Search Students"/>
+            </label>
+            <label class="d-flex flex-column" style="width: 45%;">
+              <strong>Assignment Names</strong>
+              <input type="text"
+                id="assignment-name-search"
+                placeholder="Search Assignments"/><br/>
+            </label>
+          </div>
+
+          <button class="btn btn-outline-dark mt-10" type="button">Apply Filters</button>
+
+          <div class="table-responsive "  style="width: 90%; margin-top: 10px;">
+            <table class="table table-striped border table-borderless">
+              <thead>
+                <tr class="table-row">
+                    <th>Student Name</th>
+                    <th>A1 SETUP</br>Out of 100</th>
+                    <th>A2 HTML</br>Out of 100</th>
+                    <th>A3 CSS</br>Out of 100</th>
+                    <th>A4 BOOTSTRAP</br>Out of 100</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-row">
+                  <td>John Doe</td>
+                  <td class="grade">100</td>
+                  <td class="grade">99</td>
+                  <td class="grade">85</td>
+                  <td class="grade">120</td>
+                </tr>
+
+                <tr class="table-row">
+                  <td>Adam Smith</td>
+                  <td class="grade">0</td>
+                  <td>
+                    <input
+                      type="text"
+                      class="text-input"
+                      id="grade-input"
+                      placeholder="0"
+                  />
+                    <br/>
+                  </td>
+                  <td class="grade">30</td>
+                  <td class="grade">0</td>
+                </tr>
+
+                <tr class="table-row">
+                  <td>Margaret Edwards</td>
+                  <td class="grade">100</td>
+                  <td class="grade">95</td>
+                  <td class="grade">100</td>
+                  <td class="grade">100</td>
+                </tr>
+
+                <tr class="table-row">
+                  <td>Mary Anne</td>
+                  <td class="grade">100</td>
+                  <td class="grade">0</td>
+                  <td><input type="text"
+                    class="text-input"
+                    id="grade-input"
+                    placeholder="0"/></td>
+                  <td class="grade">0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
