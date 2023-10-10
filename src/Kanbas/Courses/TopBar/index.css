@@ -1,0 +1,37 @@
+
+.breadcrumb-item+.breadcrumb-item::before {
+  --bs-breadcrumb-divider: ">";
+}
+
+.wd-flex-row-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%
+}
+
+.wd-top-title{
+  margin: 30px;
+}
+
+.wd-top-bar-bars{
+  margin-right: 10px; 
+  color: red; 
+  font-size: 2rem;
+}
+
+
+.breadcrumb li {
+  color: red;
+  font-size:1.3rem;
+}
+
+.breadcrumb li a{
+  color: red;
+}
+
+
+
+.top-bar-breadcrumbs {
+  border-bottom: 1px solid gray;
+  width: 100%;
+}
