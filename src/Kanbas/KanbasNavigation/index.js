@@ -29,12 +29,16 @@ function KanbasNavigation() {
       <img src={NEUImage} className="wd-neu-icon"></img>
       <ul className="wd-kanbas-navigation">
         {links.map((link, index) => (
-          <li className={`${pathname.includes(link) && "wd-active"} `}>
+          <li 
+            className={` ${pathname.includes(link) && "wd-active"} `}
+            style={{ padding: '0px'}}
+          >
             <Link
               key={index}
               to={`/Kanbas/${link}`}
-              className={`list-group-item `}>
-              {linkToIconMap[link]}<br/>
+              className={`list-group-item nav-item`}
+            >
+              {linkToIconMap[link]}
               {link}
             </Link>
           </li>

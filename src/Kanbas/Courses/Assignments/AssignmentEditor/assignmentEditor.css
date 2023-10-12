@@ -1,0 +1,45 @@
+.assignment-editor-section {
+  width: 90%;
+}
+
+.top-action-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px lightgray solid;
+  margin-bottom: 15px;
+}
+
+.published {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  color: green;
+  display: flex;
+  margin: 0;
+}
+
+.more-icon-container {
+  width: 30px !important;
+  text-align: center !important;
+  padding: 5px !important;
+  margin-left: 10px;
+}
+
+.name-editor {
+  padding-bottom: 15px;
+  border-bottom: 1px lightgray solid;
+  margin-bottom: 15px;
+}
+
+.name-input {
+  margin-top: 2px;
+  width: 100% !important;
+}
+
+.cancel-save-bar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 3px;
+}

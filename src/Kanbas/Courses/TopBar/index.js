@@ -11,7 +11,15 @@ function TopBar() {
   const {pathname} = useLocation();
   const course = db.courses.find((course) => course._id === courseId);
 
-
+  const breadcrumbPage = () => {
+    const pathnameArr = pathname.split('/');
+    const l = pathnameArr.length;
+    if (l === 6) {
+      return pathnameArr[l - 2];
+    } else {
+      return pathnameArr[l - 1];
+    }
+  }
 
   return (
     <div style={{width: '100%'}}>
@@ -28,7 +36,7 @@ function TopBar() {
               </Link>
             </li>
             <li className="breadcrumb-item active" aria-current="page">
-              {pathname.split("/").pop()}
+              {breadcrumbPage()}
             </li>
           </ol>
         </nav>

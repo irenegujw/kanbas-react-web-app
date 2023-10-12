@@ -3,8 +3,8 @@ import { Navigate, Route, Routes, useParams } from "react-router-dom";
 import CourseNavigation from "./CourseNavigation";
 import Modules from "./Modules";
 import Home from "./Home";
-// import Assignments from "./Assignments";
-// import AssignmentEditor from "./Assignments/AssignmentEditor";
+import Assignments from "./Assignments";
+import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
 
 import TopBar from "./TopBar";
@@ -30,10 +30,10 @@ function Courses() {
               <Route path="/" element={<Navigate to="Home" />} />
               <Route path="Home" element={<Home />} />
               <Route path="Modules" element={<Modules />} />
-              <Route path="Assignments" element={<h1>Assignments</h1>} />
+              <Route path="Assignments" element={<Assignments />} />
               <Route
                 path="Assignments/:assignmentId"
-                element={<h1>Assignment Editor</h1>}
+                element={<AssignmentEditor/>}
               />
               <Route path="Grades" element={<h1>Grades</h1>} />
             </Routes>
