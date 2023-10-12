@@ -1,0 +1,54 @@
+.more-icon {
+  font-size: 20px;
+  max-width: 12%;
+  display: flex;
+  justify-content: center;
+}
+
+.module-action-button {
+  min-width: 22%;
+  font-size: 12px !important;
+  background-color: lightgray !important;
+  color: black !important;
+}
+
+.module-action-button-red {
+  min-width: 22%;
+  font-size: 12px !important;
+}
+
+.module-action-container {
+  padding-bottom: 20px;
+  border-bottom: 1px solid gray;
+  margin-bottom: 30px;
+}
+
+.module-list-item {
+  padding: 0px 10px;
+  width: 100%;
+  height: 70px;
+  background-color: lightgray;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.module-left, .module-right {
+  display: flex;
+  gap: 5px;
+}
+
+.module-right {
+  gap: 10px;
+}
+
+.module-name {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.green-check {
+  color: green;
+}

@@ -19,16 +19,17 @@ function Courses() {
         <CourseNavigation />
         <div>
           <div
-            className="overflow-y-scroll position-fixed bottom-0 end-0"
+            className="overflow-y-none position-absolute bottom-0 end-0"
             style={{
               left: "320px",
-              top: "50px",
+              top: "100px",
+              paddingRight: '50px'
             }}
           >
             <Routes>
               <Route path="/" element={<Navigate to="Home" />} />
-              <Route path="Home" element={<h1>Home</h1>} />
-              <Route path="Modules" element={<h1>Modules</h1>} />
+              <Route path="Home" element={<Home />} />
+              <Route path="Modules" element={<Modules />} />
               <Route path="Assignments" element={<h1>Assignments</h1>} />
               <Route
                 path="Assignments/:assignmentId"

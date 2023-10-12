@@ -8,7 +8,7 @@ function CourseNavigation() {
 
   const linkNameToUrl = str => {
     const words = str.split(' ');
-    const lowerCase = words.map(word => word.toLowerCase());
+    // const lowerCase = words.map(word => word.toLowerCase());
     return words.join('-');
   }
 
