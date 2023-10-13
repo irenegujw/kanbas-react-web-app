@@ -35,7 +35,7 @@ function Courses() {
                 path="Assignments/:assignmentId"
                 element={<AssignmentEditor/>}
               />
-              <Route path="Grades" element={<h1>Grades</h1>} />
+              <Route path="Grades" element={<Grades />} />
             </Routes>
           </div>
         </div>

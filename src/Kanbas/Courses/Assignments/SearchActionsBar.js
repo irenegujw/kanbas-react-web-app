@@ -18,7 +18,7 @@ export default function SearchActionBar() {
           +Assignment
         </button>
         <button className='btn btn-outline-secondary more-icon-container'>
-          <AiOutlineMore  />
+          <AiOutlineMore/>
         </button>
       </div>
     </div>

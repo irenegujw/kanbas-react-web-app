@@ -18,7 +18,7 @@
   background-color: lightgray !important;
   margin-bottom: 5px;
   color: black !important;
-  display: flex;
+  display: flex !important;
   align-items: center;
   gap: 5px;
 }
