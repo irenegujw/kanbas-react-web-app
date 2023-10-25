@@ -1,5 +1,4 @@
 import JavaScript from "./JavaScript";
-import Nav from "../../Nav";
 import PathParameters from "./PathParameters";
 import Classes from "./Classes"
 import Styles from "./Styles";
@@ -9,7 +8,6 @@ import TodoList from "./todo/TodoList";
 function Assignment3() {
    return (
      <div> 
-       <Nav/>
        <h1>Assignment 3</h1>
        <TodoList/>
        <ConditionalOutput/>
