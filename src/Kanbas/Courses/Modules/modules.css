@@ -40,6 +40,7 @@
 
 .module-left, .module-right {
   display: flex;
+  align-items:first baseline;
   gap: 5px;
 }
 
@@ -48,10 +49,18 @@
 }
 
 .module-name {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bold;
   margin: 0px;
 }
+
+.module-name > p {
+  font-size: 15px;
+  font-weight:lighter;
+  margin-top: 3px;
+  margin: 0px;
+}
+
 
 .green-check {
   color: green;
