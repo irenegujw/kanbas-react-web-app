@@ -36,7 +36,7 @@ function ModuleList() {
           </button>
         </div>
         <textarea className="form-control border border-secondary" value={module.description} 
-                  onChange={(e) => dispatch(setModule({ ...module, name: e.target.value } ))}
+                  onChange={(e) => dispatch(setModule({ ...module, description: e.target.value } ))}
         />
 
       </div>
