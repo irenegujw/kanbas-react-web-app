@@ -22,7 +22,7 @@ function ModuleList() {
   return (
     <div className="d-flex flex-column">  
       <div className="mb-2">
-        <div className="d-flex mb-2 w-50">
+        <div className="d-flex mb-2 w-75">
           <input className="form-control border border-secondary me-2" value={module.name} 
                   onChange={(e) => dispatch(setModule({ ...module, name: e.target.value } ))}
           />
