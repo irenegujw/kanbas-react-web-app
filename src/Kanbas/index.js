@@ -53,18 +53,19 @@ function Kanbas() {
 
     const response = await axios.put(`${URL}/${courseToUpdate._id}`, sanitizedCourse);
     
-    setCourses((prevCourses) =>
-      prevCourses.map((c) =>
-        c._id === courseToUpdate._id ? response.data : c
-      )
-    );
+    // setCourses((prevCourses) =>
+    //   prevCourses.map((c) =>
+    //     c._id === courseToUpdate._id ? response.data : c
+    //   )
+    // );
 
-    setCourse({
-      name: "New Course",
-      number: "New Number",
-      startDate: "2023-09-10",
-      endDate: "2023-12-15",
-    });
+    // setCourse({
+    //   name: "New Course",
+    //   number: "New Number",
+    //   startDate: "2023-09-10",
+    //   endDate: "2023-12-15",
+    // });
+      findAllCourses();
     
     } catch (error) {
       console.error("Error updating course:", error);
