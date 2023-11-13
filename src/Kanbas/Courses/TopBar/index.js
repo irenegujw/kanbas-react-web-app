@@ -11,7 +11,8 @@ function TopBar() {
   const {courseId} = useParams();
   const {pathname} = useLocation();
   const [course, setCourse] = useState(null);
-  const URL = "http://localhost:4000/api/courses";
+  const API_BASE = process.env.REACT_APP_API_BASE;
+  const URL = `${API_BASE}/courses`;
 
   useEffect(() => {
     const fetchCourse = async () => {

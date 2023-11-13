@@ -7,8 +7,8 @@ function Dashboard(
   { courses, course, setCourse, addNewCourse,
     deleteCourse, updateCourse }  
 ) {
-
-  const URL = "http://localhost:4000/api/courses";
+  const API_BASE = process.env.REACT_APP_API_BASE;
+  const URL = `${API_BASE}/courses`;
 
   return (
     <div className="wd-main-content">
