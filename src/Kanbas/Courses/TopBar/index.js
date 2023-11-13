@@ -1,6 +1,7 @@
 import {Link, useParams, useLocation} from "react-router-dom";
 import "./index.css";
-import db from "../../Database";
+import axios from "axios";
+import { useState, useEffect } from "react";
 
 import {LiaBarsSolid} from "react-icons/lia";
 
@@ -9,7 +10,21 @@ function TopBar() {
 
   const {courseId} = useParams();
   const {pathname} = useLocation();
-  const course = db.courses.find((course) => course._id === courseId);
+  const [course, setCourse] = useState(null);
+  const URL = "http://localhost:4000/api/courses";
+
+  useEffect(() => {
+    const fetchCourse = async () => {
+      try {
+        const response = await axios.get(`${URL}/${courseId}`);
+        setCourse(response.data);
+      } catch (error) {
+        console.error("Error fetching course:", error);
+      }
+    };
+
+    fetchCourse();
+  }, [courseId]);
 
   const breadcrumbPage = () => {
     const pathnameArr = pathname.split('/');
@@ -31,9 +46,13 @@ function TopBar() {
         <nav className="" aria-label="breadcrumb">
           <ol className="breadcrumb">
             <li className="breadcrumb-item">
-              <Link to={`/Kanbas/Courses/${course._id}/home`}> 
-                {course.number} {course.name}
-              </Link>
+              {course ? (
+                <Link to={`/Kanbas/Courses/${course._id}/home`}>
+                  {course.number} {course.name}
+                </Link>
+              ) : (
+                "Course Not Found"
+              )}
             </li>
             <li className="breadcrumb-item active" aria-current="page">
               {breadcrumbPage()}

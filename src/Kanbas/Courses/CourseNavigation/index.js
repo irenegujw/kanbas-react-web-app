@@ -17,9 +17,8 @@ function CourseNavigation() {
       {links.map((link, index) => {
         const urlLink = linkNameToUrl(link);
         return (
-          <li>
-            <Link
-              key={index}
+          <li key={index}>
+            <Link             
               to={`/Kanbas/Courses/${courseId}/${urlLink}`}
               className={`${pathname.includes(urlLink) && "wd-active"}`}
             >

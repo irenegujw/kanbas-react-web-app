@@ -32,9 +32,9 @@ function KanbasNavigation() {
           <li 
             className={` ${pathname.includes(link) && "wd-active"} `}
             style={{ padding: '0px'}}
+            key={index}
           >
             <Link
-              key={index}
               to={`/Kanbas/${link}`}
               className={`list-group-item nav-item`}
             >
