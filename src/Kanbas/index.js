@@ -7,6 +7,10 @@ import './index.css'
 import store from "./store";
 import { Provider } from "react-redux";
 import axios from "axios";
+import Signin from "./users/signin";
+import Account from "./users/account";
+import UserTable from "./users/table";
+import Signup from "./users/signup";
 
 function Kanbas() {
   const [courses, setCourses] = useState([]);
@@ -78,9 +82,13 @@ function Kanbas() {
         <KanbasNavigation />
         <div style={{width: '80%'}}>
           <Routes>
-            <Route path="/" element={<Navigate to="Dashboard" />} />
-            <Route path="Account" element={<h1>Account</h1>} />
-            <Route path="Dashboard" element={
+            <Route path="/" element={<Navigate to="signin" />} />
+            <Route path="/admin/users" element={<UserTable/>} />
+            <Route path="/signin" element={<Signin />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/Account" element={<Account />} />
+            <Route path="/account/:id" element={<Account />} />
+            <Route path="/Dashboard" element={
               <Dashboard
               courses={courses}
               course={course}
